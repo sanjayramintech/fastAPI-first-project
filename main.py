@@ -4,7 +4,7 @@ import random
 
 app = FastAPI()
 
-friends = ["Ram", "Arun", "Sanjay", "Akhil"]
+friends = ["Ram", "Shown", "Sanjay", "Akhil","Aron"]
 
 @app.get("/", response_class=HTMLResponse)
 def home():
@@ -18,7 +18,10 @@ def home():
         <body>
             <h1>☕ Tea Picker</h1>
             <h2>Today's tea buyer is:</h2>
-            <h1>{chosen}</h1>
+               <h1>{chosen}</h1>
+               <button onclick="window.location.reload()">
+            Pick Again
+        </button>
         </body>
     </html>
     """
