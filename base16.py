@@ -42,3 +42,4 @@ def prod(index:int):
         raise HTTPException(status_code=500, detail="product_not_found")
    
     return "product is:" + str(products[index])
+
